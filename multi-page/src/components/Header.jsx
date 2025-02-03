@@ -3,13 +3,17 @@ export const Header = ({children}) => {
     return ( 
       <header>
         {children}
+        <picture>
+        <img src="./src/img/logo-web-title.png" alt="logo-title" />
+        </picture>
+
         <ul>
-          <li className="Footer-listItem"><a href="./?page=home">Home</a></li>
-          <li className="Footer-listItem"><a href="./?page=tyc">Términos y Condiciones</a></li>
-          <li className="Footer-listItem"><a href="./?page=contact">Contacto</a></li>
+          <li className="Footer-listItem"><a href="./?page=home">Buscador</a></li>
+          <li className="Footer-listItem"><a href="./?page=tyc">Mis libros</a></li>
+          <li className="Footer-listItem"><a href="./?page=contact">Mis reservas</a></li>
         </ul>
       </header>
-     );
+  );
   }
 
 
@@ -26,6 +30,3 @@ export const Header = ({children}) => {
 //       </header>
 //      );
 //   }
-
-   
-  

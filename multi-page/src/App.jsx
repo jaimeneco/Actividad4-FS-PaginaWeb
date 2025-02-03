@@ -1,5 +1,7 @@
 //Import de componentes
 import { Header } from './components/Header';
+import { Header2 } from './components/Header2';
+
 // import { Header2 } from './components/Header';
 import { Footer } from './components/Footer';
 

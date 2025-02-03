@@ -7,7 +7,9 @@ export const Footer = ({children}) => {
           <li className="Footer-listItem"><a href="./?page=nosotros">Nosotros</a></li>
           <li className="Footer-listItem"><a href="./?page=contact">Contacto</a></li>
         </ul>
-        <img src="logo" alt="logo-empresa" />
+        <picture>
+        <img src="./src/img/logo-web-title.png" alt="logo-title" />
+        </picture>
       </footer>
-     );
+    );
   }

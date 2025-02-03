@@ -1,5 +1,5 @@
 //Para usar este Header, tenemos que leer los Query Params
-export const Header = ({ children }) => {
+export const Header2 = ({ children }) => {
     return (
         <header>
             {children}

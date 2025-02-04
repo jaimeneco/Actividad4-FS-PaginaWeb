@@ -1,9 +1,12 @@
 import { useState } from 'react';
 
 
+
+
 export const Interruptor = () => {
     const [isOn, setIsOn] = useState(false);
-
+    const [tarea, setTarea] = useState("");
+    const [listaTareas, setListaTareas] = useState(["item1", "item2"]);
     const isPrendida = isOn ? "Apagar" : "Encender";
 
 const darkStyle = {

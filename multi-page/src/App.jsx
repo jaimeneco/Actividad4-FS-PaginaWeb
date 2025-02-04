@@ -4,18 +4,22 @@ import { Header2 } from './components/Header2';
 import {Contador } from './components/estados/Contador';
 import {Interruptor} from './components/estados/Interruptor';
 import { ListaDeTareas } from './components/estados/Tareas';
-
-// import { Header2 } from './components/Header';
 import { Footer } from './components/Footer';
 
 //Import de Páginas
 import Home from './pages/Home';
+import InicioSesion from './pages/InicioSesion';
 import TyC from './pages/TyC';
-// import Contact from './pages/Contact';
+import Perfil from './pages/Perfil';
+import LibroUnidad from './pages/LibroUnidad';
 
 // importar hooks:
 import { useState} from 'react'
 
+
+//-------------------------------------------------
+//--------------INICIO DE LA APP-------------------
+//-------------------------------------------------
 function App() {
   const [nombre, setNombre] = useState("Jaime")
 
@@ -33,8 +37,21 @@ function App() {
   let page;
   //Si quisiéramos usar Header o Header 2 hay que cambiar const params o cons pathValue
   switch(selector){
-    case 'terminos': page = <TyC />; break;
-    case 'contacto': page = <Contact />; break;
+    case 'Home': 
+      page = <Home />; 
+      break;
+    case 'Perfil': 
+      page = <Perfil />; 
+      break;
+    case 'LibroUnidad': 
+      page = <LibroUnidad />; 
+      break;
+    case 'TyC': 
+      page = <TyC />; 
+      break;
+    case 'InicioSesion': 
+      page = <InicioSesion />; 
+      break;
     default: page = <Home />;
   }
 

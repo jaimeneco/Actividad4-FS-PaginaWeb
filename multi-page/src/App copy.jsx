@@ -1,15 +1,7 @@
 //Import de componentes
 import { Header } from './components/Header';
 import { Header2 } from './components/Header2';
-import {Contador } from './components/estados/Contador';
-import {Interruptor} from './components/estados/Interruptor';
-import { ListaDeTareas } from './components/estados/Tareas';
 import { Footer } from './components/Footer';
-import {GaleriaImagenes} from './components/Galeria'
-// import { Formulario } from './components/Formulario-registro'
-import {Formulario} from './component/estado/Formulario'
-
-ServiceWorkerRegistration,
 
 //Import de Páginas
 import Home from './pages/Home';
@@ -62,29 +54,6 @@ function App() {
 
   return (
     <>
-
-    <h3>Ejemplos de useState</h3>
-
-    <Contador />
-    <Contador />
-
-{/* Un interruptor que cambie entre encendido y apagado. También cambie su color */}
-
-    <Interruptor />
-
-<hr />
-
-Creemos una lista de tareas, utilizando un input. El input debe tener el atributo:
-<input
-  value={nombre}
-  onChange={(e)=> {setNombre(e.target.value)}}
-  placeholder="Ingresar tarea aquí..."
-  />
-  mi nombre es: {nombre}
-  <h1>{nombre}</h1>
-
-
-  <ListaDeTareas />
 
       <Header>Con Query Params</Header>
       {/* <Header2>Con PathName</Header2> */}

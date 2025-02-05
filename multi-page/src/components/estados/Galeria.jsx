@@ -1,3 +1,6 @@
+// 5. Galería de Imágenes:
+// Crea una galería simple donde el usuario pueda navegar entre varias imágenes usando botones de "anterior" y "siguiente". Puedes utilizar `https://dummyjson.com/docs/` para generar las imágenes.
+
 import { useState } from "react";
 
 export const GaleriaImagenes = () => {

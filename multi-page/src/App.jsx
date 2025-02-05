@@ -1,11 +1,10 @@
-//Import de componentes
+//Import de componentes:
 // import {Contador } from './components/estados/Contador';
 // import {Interruptor} from './components/estados/Interruptor';
 // import { ListaDeTareas } from './components/estados/Tareas';
-import {GaleriaImagenes} from './components/estados/Galeria';
-// import { Formulario } from './components/Formulario-registro'
-// import {Formulario} from './component/estado/Formulario'
-
+// import { Formulario } from './components/estados/Formulario';
+// import {GaleriaImagenes} from './components/estados/Galeria';
+import { Adivinanza } from './components/estados/Adivinanza';
 
 
 //-------------------------------------------------
@@ -17,22 +16,29 @@ function App() {
   return (
     <>
 
-    {/* <h3>Ejemplos de useState</h3>
+<h3>Ejemplos de useState</h3>
 
-    <Contador />
-    <Contador />
+  {/* <Contador /> */}
 
-{/* Un interruptor que cambie entre encendido y apagado. También cambie su color */}
+  {/* <Interruptor /> */}
 
-    {/* <Interruptor />
+  {/* <ListaDeTareas />  */}
 
+  {/* <Formulario /> */}
 
-  <ListaDeTareas /> */} 
+  {/* <GaleriaImagenes /> */}
 
-  <GaleriaImagenes />
+  {/* <Temporizador /> */}
+
+  {/* <Calculadora /> */}
+
+  <Adivinanza />
+
+  {/* <EditorDeTexto /> */}
+
+  {/* <CarritoDeCompras /> */}
     </>
   )
 }
 
 export default App
-

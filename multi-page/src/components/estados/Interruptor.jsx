@@ -1,6 +1,7 @@
+//2. Interruptor On/Off:
+// Implementa un botón que alterne entre los estados "Encendido" y "Apagado". Aprovechar este cambio de estado para cambiar la clase de un objeto, o sus estilos.
+
 import { useState } from 'react';
-
-
 
 
 export const Interruptor = () => {

@@ -1,3 +1,6 @@
+// 3. Lista de Tareas Básica:
+// Crea un componente que permita añadir tareas a una lista y mostrarlas.
+
 import { useState } from "react";
 
 export const ListaDeTareas = () => {

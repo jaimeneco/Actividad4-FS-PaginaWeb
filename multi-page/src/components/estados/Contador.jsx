@@ -1,3 +1,6 @@
+// 1. Contador Simple:
+// Crea un componente con un botón que incremente un contador. Muestra el valor del contador en la pantalla.
+
 import {useState} from 'react';
 
 export const Contador = () => {

@@ -4,7 +4,11 @@
 // import { ListaDeTareas } from './components/estados/Tareas';
 // import { Formulario } from './components/estados/Formulario';
 // import {GaleriaImagenes} from './components/estados/Galeria';
-import { Adivinanza } from './components/estados/Adivinanza';
+import {Temporizador} from './components/estados/Temporizador'
+// import { Calculadora } from "./components/estados/Calculadora";
+// import { Adivinanza } from './components/estados/Adivinanza';
+// import { ContadorTexto } from "./components/estados/ContadorTexto";
+// import { CarritoDeCompras} from "./components/estados/CarritoDeCompras";
 
 
 //-------------------------------------------------
@@ -28,13 +32,13 @@ function App() {
 
   {/* <GaleriaImagenes /> */}
 
-  {/* <Temporizador /> */}
+  <Temporizador />
 
   {/* <Calculadora /> */}
 
-  <Adivinanza />
+  {/* <Adivinanza /> */}
 
-  {/* <EditorDeTexto /> */}
+  {/* <ContadorTexto /> */}
 
   {/* <CarritoDeCompras /> */}
     </>

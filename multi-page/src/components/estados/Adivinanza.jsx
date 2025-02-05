@@ -45,8 +45,8 @@ export const Adivinanza = () => {
 
 
 // export const Adivinanza = () => {
+
 //     const randomNum = Math.floor(Math.random() * 100) +1;
-    
 //     const comprobarNum = () => {
 //         if (num1 === randomNum) {
 //             console.log("¡Has acertado!")
@@ -62,7 +62,7 @@ export const Adivinanza = () => {
 
 //     return ( 
 //         <h3>Juego de Adivinanzas</h3>
-//         <p>comprobarNum</p>
+//         comprobarNum
 //     );
 
 // }

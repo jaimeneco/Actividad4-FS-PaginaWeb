@@ -1,35 +1,41 @@
 import { useState } from "react";
 
-export const InicioSesion = () => {
+export const FormRegistro = () => {
     const formulario = ();
-    return (
 
-    <>
-        <main className="Main">
-            <form action="">
+    const handleSubmit = (e) => {
+        e.preventDefault(); // evita que se envíe el formulario en HTML
 
-                
-                <label htmlFor="nameUser">Usuario:</label>
-                    <input type="text" name="name" />
-                <label htmlFor="mailUser">Email:</label>
-                    <input type="email" name="email" />
-                
-            </form>
-        </main>
-        
-        </>
-)}
-
-const handleSubmit = (e)=>{
-    e.preventDefault(); // evita que se envíe el formulario en HTML
-
-    //Enviar el formulario
-    console.log("Enviando", formData);
+        //Enviar el formulario a la DB
+        console.log("Enviando", formData);
 
 
-const handleChange = (e) => {
+    const handleChange = (e) => {
 
-}
+        setFormData( (prevState) => ({
+            ...prevState,
+            [e.target.name]: e.target.value
+        })
+        }
+
+        return (
+
+            <>
+                <main className="Main">
+                    <form action="">
+
+
+                        <label htmlFor="nameUser">Usuario:</label>
+                        <input type="text" name="name" />
+                        <label htmlFor="mailUser">Email:</label>
+                        <input type="email" name="email" />
+
+                    </form>
+                </main>
+
+            </>
+        )
+    }
 }
 
 

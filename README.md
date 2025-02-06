@@ -8,8 +8,8 @@ cd nombre-proyecto
 npm i
 npm run dev -->
 
-
-## EJERCICIOS VARIOS:
+<!-- EJERCICIOS DE ESTADOS -->
+## EJERCICIOS DE ESTADOS:
 1. Contador Simple:
 Crea un componente con un botón que incremente un contador. Muestra el valor del contador en la pantalla.
 
@@ -46,6 +46,19 @@ Crea un área de texto que muestre en tiempo real un recuento de palabras y cara
 
 10. Carrito de Compras:
 Implementa un carrito de compras simple donde los usuarios puedan añadir items, ver el total y la cantidad de items. Investiga el método "reduce" para arrays para calcular el total.
+
+
+<!-- EJERCICIOS DE EFECTOS -->
+
+## Ejercicios useEffect
+
+1. Crea un componente que muestre un mensaje en la consola cuando el componente se monte por primera vez.
+2. Crea un componente que registre el tiempo en segundos desde que el componente se montó.
+3. Crea un componente que obtenga datos de una API y los muestre en pantalla.(https://jsonplaceholder.typicode.com/posts/1)
+4. Crea un contador con botones para incrementar y decrementar el valor. Usa useEffect para registrar cada vez que el valor del contador cambie.
+5. Crea un componente que registre el tamaño de la ventana en la consola cada vez que esta cambie.
+6. Crea un componente que sincronice un estado con el localStorage del navegador.
+7. Crear un componente  "Montar" con un botón que al hacerle click, muestre en consola cada vez que se monta/desmonta el componente hijo.
 
 
 

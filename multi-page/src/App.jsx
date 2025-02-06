@@ -1,5 +1,5 @@
 //Import de componentes:
-// import {Contador } from './components/estados/Contador';
+// import {Contador } from './components/estados/ContadorSimple';
 // import {Interruptor} from './components/estados/Interruptor';
 // import { ListaDeTareas } from './components/estados/Tareas';
 // import { Formulario } from './components/estados/Formulario';
@@ -22,7 +22,7 @@ function App() {
 
 <h3>Ejemplos de useState</h3>
 
-  {/* <Contador /> */}
+  {/* <ContadorSimple /> */}
 
   {/* <Interruptor /> */}
 

@@ -18,8 +18,17 @@
 // import { TraerPost } from './components/efectos/TraerPost';
 // import { ContadorClick } from './components/efectos/ContadorClick';
 // import { CalcularVentana } from './components/efectos/Ventana';
-import { Montar } from './components/efectos/Montar';
+// import { Montar } from './components/efectos/Montar';
 
+//Import de Modulos:
+import { Carrusel } from "./components/modulos/Carrusel"
+const imageList = [
+    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+1",
+    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+2",
+    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+3",
+    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+4",
+    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+5"
+        ]
 
 
 //-------------------------------------------------
@@ -56,7 +65,7 @@ function App() {
 
 
 
-  <h3>Ejemplos de useEffect</h3>
+  {/* <h3>Ejemplos de useEffect</h3> */}
 
   {/* <Saludar /> */}
 
@@ -68,7 +77,10 @@ function App() {
 
   {/* <CalcularVentana /> */}
 
-  <Montar />
+  {/* <Montar /> */}
+
+  < Carrusel imageList={imageList}/>
+  < Carrusel imageList={imageList} autoPlay/>
     </>
   )
 }

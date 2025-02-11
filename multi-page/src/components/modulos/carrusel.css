@@ -1,0 +1,27 @@
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrusel-container{
+    display: flex;
+}
+
+.carrusel-slide{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrusel-slide img{
+    width: 100%;
+    display: block;
+}
+
+/* .carrusel-controls {
+    position: absolute;
+}
+
+.carrusel-indicators {
+    position: absolute;
+} */

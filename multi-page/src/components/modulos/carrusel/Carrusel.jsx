@@ -4,10 +4,11 @@ import './carrusel.css';
 export const Carrusel = ({ imageList, autoPlay=false }) => {
 
     const [idx, setIdx] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
 
     useEffect( ()=> {
         console.log("useEffect");
-        if(!autoPlay) return;
+        if(!autoPlay || isPaused) return;
 
         const idx = setInterval( ()=> {
             handleNext();
@@ -41,7 +42,10 @@ export const Carrusel = ({ imageList, autoPlay=false }) => {
 
     return (
         // onMouseEnter={} onMouseLeave={}
-        <div className="carrusel" >
+        <div className="carrusel" 
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}>
+
             <div className="carrusel-container" style={{ transform: `translateX(-${idx * 100}%)`}}>
                 {
                     imageList.map( (image, idx) => (
@@ -52,8 +56,8 @@ export const Carrusel = ({ imageList, autoPlay=false }) => {
                 }
             </div>
             <div className="carrusel-controls">
-                <button onClick={handlePrev}>Anterior</button>
-                <button onClick={handleNext}>Siguiente</button>
+                <button className="carrusel-btnPrev" onClick={handlePrev}>Anterior</button>
+                <button className="carrusel-btnNext"onClick={handleNext}>Siguiente</button>
             </div>
             <div className="carrusel-indicators">
                 {imageList.map ( (image, idx) =>(

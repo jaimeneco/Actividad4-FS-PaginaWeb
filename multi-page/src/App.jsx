@@ -21,14 +21,62 @@
 // import { Montar } from './components/efectos/Montar';
 
 //Import de Modulos:
-import { Carrusel } from "./components/modulos/Carrusel"
-const imageList = [
-    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+1",
-    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+2",
-    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+3",
-    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+4",
-    "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+5"
-        ]
+// import { Carrusel } from "./components/modulos/carrusel/Carrusel"
+// const imageList = [
+//     "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+1",
+//     "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+2",
+//     "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+3",
+//     "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+4",
+//     "https://dummyjson.com/image/600x300/008080/ffffff?text=Imagen+5"
+//         ]
+
+//---------------------------
+//--- Menús de Navegación ---
+//---------------------------
+// MENÚ HORIZONTAL:
+// import { MenuHorizontal } from "./components/modulos/menus/horizontal/MenuHorizontal"
+// const menuItems = [
+//   {label: "Home", url: "./home"},
+//   {label: "Configuración", url: "./config"},
+//   {label: "Ayuda", url: "./support"}
+// ]
+
+//MENÚ DROPDOWN:
+// import { MenuDropDown } from "./components/modulos/menus/dropDown/MenuDropDown"
+// const menuItems = [
+//   {label: "Home", url: "./home"},
+//   {label: "Configuración", url: "./config"},
+//   {label: "Ayuda", url: "./support"}
+// ]
+
+//MENÚ CATEGORÍAS:
+import { MenuVertical } from "./components/modulos/menus/vertical-iconos/MenuVertical"
+const menuCategorias = [
+  {
+    name: "Home",
+    icon: "fa-techometer-alt",
+    items: [
+      {label: "Dashboard", url: "./dashboard"},
+      {label: "Reportes", url: "./reports"},
+    ]
+  },
+  {
+    name: "Configuración",
+    icon: "fa-cog",
+    items: [
+      {label: "Perfil", url: "./profile"},
+      {label: "Tu cuenta", url: "./account"},
+    ]
+  },
+  {
+    name: "Ayuda",
+    icon: "fa-question-circle",
+    items: [
+      {label: "FAQ", url: "./faq"},
+      {label: "Soporte", url: "./support"},
+    ]
+  },
+]
 
 
 //-------------------------------------------------
@@ -41,7 +89,7 @@ function App() {
     <>
 <h1>COMPONENT PARTY</h1>
 
-{/* <h3>Ejemplos de useState</h3> */}
+  {/* <h3>Ejemplos de useState</h3> */}
 
   {/* <ContadorSimple /> */}
 
@@ -79,8 +127,22 @@ function App() {
 
   {/* <Montar /> */}
 
-  < Carrusel imageList={imageList}/>
-  < Carrusel imageList={imageList} autoPlay/>
+
+  <h3>Ejemplos de Modulos</h3>
+
+  {/* < Carrusel imageList={imageList}/>
+  < Carrusel imageList={imageList} autoPlay/> */}
+
+  {/* <MenuHorizontal items={menuItems} /> */}
+
+  {/* <MenuDropDown items={menuItems} /> */}
+
+  <MenuVertical items={menuCategorias} />
+  {/* <i class="fa-solid fa-tachometer-alt"></i>
+  <i class="fa-solid fa-cog"></i>
+  <i class="fa-solid fa-question-circle"></i> */}
+
+
     </>
   )
 }

@@ -1,0 +1,17 @@
+.h-menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* .h-menu li{
+
+} */
+
+.h-menu a{
+    text-decoration: none;
+    color:#090909;
+}
+.h-menu a:hover{
+    color:#128e7f;
+}

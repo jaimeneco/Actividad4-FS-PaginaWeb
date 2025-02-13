@@ -54,7 +54,7 @@ import { MenuVertical } from "./components/modulos/menus/vertical-iconos/MenuVer
 const menuCategorias = [
   {
     name: "Home",
-    icon: "fa-techometer-alt",
+    icon: "fa-tachometer-alt",
     items: [
       {label: "Dashboard", url: "./dashboard"},
       {label: "Reportes", url: "./reports"},
@@ -74,6 +74,14 @@ const menuCategorias = [
     items: [
       {label: "FAQ", url: "./faq"},
       {label: "Soporte", url: "./support"},
+    ]
+  },
+  {
+    name: "Usuario",
+    icon: "fa-user",
+    items: [
+      {label: "Datos", url: "./datos"},
+      {label: "Sesión", url: "./sesion"},
     ]
   },
 ]
@@ -137,10 +145,7 @@ function App() {
 
   {/* <MenuDropDown items={menuItems} /> */}
 
-  <MenuVertical items={menuCategorias} />
-  {/* <i class="fa-solid fa-tachometer-alt"></i>
-  <i class="fa-solid fa-cog"></i>
-  <i class="fa-solid fa-question-circle"></i> */}
+  <MenuVertical categories={menuCategorias} />
 
 
     </>

@@ -1,6 +1,17 @@
+.h-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.btn{
+    background-color: #213547;
+    color: aliceblue;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
 .h-menu li{
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    padding: 10px;
-    
+    list-style-type: none;
 }

@@ -26,7 +26,7 @@ export const MenuDropDown = ({items}) => {
 
         </nav>
         </>
-     );
+    );
 }
 
 const Item = ({label, url}) => {

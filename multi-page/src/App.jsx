@@ -50,41 +50,47 @@
 // ]
 
 //MENÚ CATEGORÍAS:
-import { MenuVertical } from "./components/modulos/menus/vertical-iconos/MenuVertical"
-const menuCategorias = [
-  {
-    name: "Home",
-    icon: "fa-tachometer-alt",
-    items: [
-      {label: "Dashboard", url: "./dashboard"},
-      {label: "Reportes", url: "./reports"},
-    ]
-  },
-  {
-    name: "Configuración",
-    icon: "fa-cog",
-    items: [
-      {label: "Perfil", url: "./profile"},
-      {label: "Tu cuenta", url: "./account"},
-    ]
-  },
-  {
-    name: "Ayuda",
-    icon: "fa-question-circle",
-    items: [
-      {label: "FAQ", url: "./faq"},
-      {label: "Soporte", url: "./support"},
-    ]
-  },
-  {
-    name: "Usuario",
-    icon: "fa-user",
-    items: [
-      {label: "Datos", url: "./datos"},
-      {label: "Sesión", url: "./sesion"},
-    ]
-  },
-]
+// import { MenuVertical } from "./components/modulos/menus/vertical-iconos/MenuVertical"
+// const menuCategorias = [
+//   {
+//     name: "Home",
+//     icon: "fa-tachometer-alt",
+//     items: [
+//       {label: "Dashboard", url: "./dashboard"},
+//       {label: "Reportes", url: "./reports"},
+//     ]
+//   },
+//   {
+//     name: "Configuración",
+//     icon: "fa-cog",
+//     items: [
+//       {label: "Perfil", url: "./profile"},
+//       {label: "Tu cuenta", url: "./account"},
+//     ]
+//   },
+//   {
+//     name: "Ayuda",
+//     icon: "fa-question-circle",
+//     items: [
+//       {label: "FAQ", url: "./faq"},
+//       {label: "Soporte", url: "./support"},
+//     ]
+//   },
+//   {
+//     name: "Usuario",
+//     icon: "fa-user",
+//     items: [
+//       {label: "Datos", url: "./datos"},
+//       {label: "Sesión", url: "./sesion"},
+//     ]
+//   },
+// ]
+
+
+// MOCKDATA:
+import { productos, testimonios, eventosCalendario, comentarios, restaurant, tarjetasRecetas } from "./db/datos"
+
+import { ListaDeProductos } from "./components/actividadesExtra/ListaDeProductos";
 
 
 //-------------------------------------------------
@@ -136,7 +142,7 @@ function App() {
   {/* <Montar /> */}
 
 
-  <h3>Ejemplos de Modulos</h3>
+  {/* <h3>Ejemplos de Modulos</h3> */}
 
   {/* < Carrusel imageList={imageList}/>
   < Carrusel imageList={imageList} autoPlay/> */}
@@ -145,9 +151,11 @@ function App() {
 
   {/* <MenuDropDown items={menuItems} /> */}
 
-  <MenuVertical categories={menuCategorias} />
+  {/* <MenuVertical categories={menuCategorias} /> */}
 
+  <h3>Actividades extra</h3>
 
+    <ListaDeProductos productos={productos} />
     </>
   )
 }

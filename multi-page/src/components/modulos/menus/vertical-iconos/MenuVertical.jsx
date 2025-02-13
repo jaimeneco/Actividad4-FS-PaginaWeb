@@ -1,5 +1,13 @@
+//------------------------------------
+//---------- Solución Tomás ----------
+//------------------------------------
+
+//------------------------------------
+//---------- Solución chat -----------
+//------------------------------------
 import { useState } from 'react';
 import './menu-vertical.css';
+
 
 export const MenuVertical = ({ categories }) => {
     const [openCategories, setOpenCategories] = useState({});
